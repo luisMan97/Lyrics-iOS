@@ -1,0 +1,1231 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E627D0726209E9A003F4EBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D0626209E9A003F4EBF /* AppDelegate.swift */; };
+		4E627D0926209E9A003F4EBF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D0826209E9A003F4EBF /* SceneDelegate.swift */; };
+		4E627D0B26209E9A003F4EBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D0A26209E9A003F4EBF /* ContentView.swift */; };
+		4E627D0D26209E9D003F4EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E627D0C26209E9D003F4EBF /* Assets.xcassets */; };
+		4E627D1026209E9D003F4EBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E627D0F26209E9D003F4EBF /* Preview Assets.xcassets */; };
+		4E627D1326209E9D003F4EBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E627D1126209E9D003F4EBF /* LaunchScreen.storyboard */; };
+		4E627D1E26209E9E003F4EBF /* Lirycs_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D1D26209E9E003F4EBF /* Lirycs_iOSTests.swift */; };
+		4E627D2926209E9E003F4EBF /* Lirycs_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D2826209E9E003F4EBF /* Lirycs_iOSUITests.swift */; };
+		4E627D422620CCF6003F4EBF /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D412620CCF6003F4EBF /* APIRouter.swift */; };
+		4E627D4B2620CD1E003F4EBF /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D4A2620CD1E003F4EBF /* APIManager.swift */; };
+		4E627D542620CD38003F4EBF /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D532620CD38003F4EBF /* HTTPMethod.swift */; };
+		4E627D5D2620CD57003F4EBF /* APIManagerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D5C2620CD57003F4EBF /* APIManagerConstants.swift */; };
+		4E627D762620CE31003F4EBF /* GetLyricsSearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D6E2620CE31003F4EBF /* GetLyricsSearchUseCase.swift */; };
+		4E627D772620CE31003F4EBF /* LyricsSearchURLSessionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D6F2620CE31003F4EBF /* LyricsSearchURLSessionDataSource.swift */; };
+		4E627D782620CE31003F4EBF /* LyricsSearchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D702620CE31003F4EBF /* LyricsSearchModels.swift */; };
+		4E627D792620CE31003F4EBF /* LyricsSearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D712620CE31003F4EBF /* LyricsSearchRepository.swift */; };
+		4E627D7A2620CE31003F4EBF /* LyricsSearchBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D722620CE31003F4EBF /* LyricsSearchBuilder.swift */; };
+		4E627D7B2620CE31003F4EBF /* LyricsSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D732620CE31003F4EBF /* LyricsSearchView.swift */; };
+		4E627D7C2620CE31003F4EBF /* RemoteLyricsSearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D742620CE31003F4EBF /* RemoteLyricsSearchDataSource.swift */; };
+		4E627D7D2620CE31003F4EBF /* LyricsSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D752620CE31003F4EBF /* LyricsSearchViewModel.swift */; };
+		4E627D9F2620DBD2003F4EBF /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627D9E2620DBD2003F4EBF /* LoadingView.swift */; };
+		4E627DA72620DBE4003F4EBF /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DA62620DBE4003F4EBF /* VisualEffectView.swift */; };
+		4E627DAC2620DC01003F4EBF /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DAB2620DC01003F4EBF /* ActivityIndicator.swift */; };
+		4E627DB82620E040003F4EBF /* GenericTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DB72620E040003F4EBF /* GenericTextFieldView.swift */; };
+		4E627DBE2620E098003F4EBF /* PlaceholderStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DBD2620E098003F4EBF /* PlaceholderStyle.swift */; };
+		4E627DC62620E180003F4EBF /* GenericTextFieldWithValidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DC52620E180003F4EBF /* GenericTextFieldWithValidate.swift */; };
+		4E627DCB2620E19B003F4EBF /* ValidationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DCA2620E19B003F4EBF /* ValidationFormView.swift */; };
+		4E627DD12620E4BB003F4EBF /* GenericButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DD02620E4BB003F4EBF /* GenericButtonView.swift */; };
+		4E627DD92620EDDB003F4EBF /* ValidateFormTextsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DD82620EDDB003F4EBF /* ValidateFormTextsUseCase.swift */; };
+		4E627DDE2620EF53003F4EBF /* PublisherExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DDD2620EF53003F4EBF /* PublisherExtensions.swift */; };
+		4E627DEE2620FF80003F4EBF /* GetLyricsListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DE62620FF80003F4EBF /* GetLyricsListUseCase.swift */; };
+		4E627DEF2620FF80003F4EBF /* LyricsListCoreDataDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DE72620FF80003F4EBF /* LyricsListCoreDataDataSource.swift */; };
+		4E627DF02620FF80003F4EBF /* LyricsListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DE82620FF80003F4EBF /* LyricsListModels.swift */; };
+		4E627DF12620FF80003F4EBF /* LyricsListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DE92620FF80003F4EBF /* LyricsListRepository.swift */; };
+		4E627DF22620FF80003F4EBF /* LyricsListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DEA2620FF80003F4EBF /* LyricsListBuilder.swift */; };
+		4E627DF32620FF80003F4EBF /* LyricsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DEB2620FF80003F4EBF /* LyricsListView.swift */; };
+		4E627DF42620FF80003F4EBF /* RemoteLyricsListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DEC2620FF80003F4EBF /* RemoteLyricsListDataSource.swift */; };
+		4E627DF52620FF80003F4EBF /* LyricsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627DED2620FF80003F4EBF /* LyricsListViewModel.swift */; };
+		4E627E0D26210255003F4EBF /* Song.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E0B26210255003F4EBF /* Song.xcdatamodeld */; };
+		4E627E132621026B003F4EBF /* Song+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E112621026B003F4EBF /* Song+CoreDataClass.swift */; };
+		4E627E142621026B003F4EBF /* Song+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E122621026B003F4EBF /* Song+CoreDataProperties.swift */; };
+		4E627E2B26210452003F4EBF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E2A26210452003F4EBF /* AppState.swift */; };
+		4E627E3626210496003F4EBF /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E3526210496003F4EBF /* DatabaseManager.swift */; };
+		4E627E402621050E003F4EBF /* IdentifiableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E3F2621050E003F4EBF /* IdentifiableError.swift */; };
+		4E627E4826211E92003F4EBF /* LocalLyricsSearchDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E4726211E91003F4EBF /* LocalLyricsSearchDataSource.swift */; };
+		4E627E4E26213699003F4EBF /* LyricsSearchCoreDataDataSoruce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E4D26213699003F4EBF /* LyricsSearchCoreDataDataSoruce.swift */; };
+		4E627E5626213901003F4EBF /* SaveSongUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E5526213901003F4EBF /* SaveSongUseCase.swift */; };
+		4E627E5C26213A5C003F4EBF /* LyricsSearchDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E5B26213A5C003F4EBF /* LyricsSearchDao.swift */; };
+		4E627E642621401D003F4EBF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E632621401D003F4EBF /* AppCoordinator.swift */; };
+		4E627E6F26214FD0003F4EBF /* GetLastLyricsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E6E26214FD0003F4EBF /* GetLastLyricsUseCase.swift */; };
+		4E627E7426216543003F4EBF /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E7326216543003F4EBF /* ArrayExtensions.swift */; };
+		4E627E792621669B003F4EBF /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E782621669B003F4EBF /* ViewExtensions.swift */; };
+		4E627E7F262166F6003F4EBF /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E7E262166F6003F4EBF /* SearchBar.swift */; };
+		4E627E8726216714003F4EBF /* ViewControllerResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E8626216714003F4EBF /* ViewControllerResolver.swift */; };
+		4E627E8C26216878003F4EBF /* UIApplicationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627E8B26216878003F4EBF /* UIApplicationExtensions.swift */; };
+		4E627EA226216FB7003F4EBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E627EA126216FB7003F4EBF /* Assets.xcassets */; };
+		4E627EA726216FDA003F4EBF /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627EA626216FDA003F4EBF /* UIColorExtensions.swift */; };
+		4E627EAC26216FFD003F4EBF /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627EAB26216FFD003F4EBF /* ColorExtensions.swift */; };
+		4E627EB12621703A003F4EBF /* UINavigationBarExtenions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627EB02621703A003F4EBF /* UINavigationBarExtenions.swift */; };
+		4E627EB626217054003F4EBF /* UINavigationBarAppearanceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E627EB526217054003F4EBF /* UINavigationBarAppearanceExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E627D1A26209E9E003F4EBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E627CFB26209E99003F4EBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E627D0226209E9A003F4EBF;
+			remoteInfo = "Lirycs-iOS";
+		};
+		4E627D2526209E9E003F4EBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E627CFB26209E99003F4EBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E627D0226209E9A003F4EBF;
+			remoteInfo = "Lirycs-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E627D0326209E9A003F4EBF /* Lirycs-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lirycs-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E627D0626209E9A003F4EBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4E627D0826209E9A003F4EBF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4E627D0A26209E9A003F4EBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4E627D0C26209E9D003F4EBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E627D0F26209E9D003F4EBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4E627D1226209E9D003F4EBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E627D1426209E9D003F4EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E627D1926209E9E003F4EBF /* Lirycs-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lirycs-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E627D1D26209E9E003F4EBF /* Lirycs_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lirycs_iOSTests.swift; sourceTree = "<group>"; };
+		4E627D1F26209E9E003F4EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E627D2426209E9E003F4EBF /* Lirycs-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lirycs-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E627D2826209E9E003F4EBF /* Lirycs_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lirycs_iOSUITests.swift; sourceTree = "<group>"; };
+		4E627D2A26209E9E003F4EBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E627D412620CCF6003F4EBF /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		4E627D4A2620CD1E003F4EBF /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		4E627D532620CD38003F4EBF /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		4E627D5C2620CD57003F4EBF /* APIManagerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerConstants.swift; sourceTree = "<group>"; };
+		4E627D6E2620CE31003F4EBF /* GetLyricsSearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLyricsSearchUseCase.swift; sourceTree = "<group>"; };
+		4E627D6F2620CE31003F4EBF /* LyricsSearchURLSessionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsSearchURLSessionDataSource.swift; sourceTree = "<group>"; };
+		4E627D702620CE31003F4EBF /* LyricsSearchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsSearchModels.swift; sourceTree = "<group>"; };
+		4E627D712620CE31003F4EBF /* LyricsSearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsSearchRepository.swift; sourceTree = "<group>"; };
+		4E627D722620CE31003F4EBF /* LyricsSearchBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsSearchBuilder.swift; sourceTree = "<group>"; };
+		4E627D732620CE31003F4EBF /* LyricsSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsSearchView.swift; sourceTree = "<group>"; };
+		4E627D742620CE31003F4EBF /* RemoteLyricsSearchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLyricsSearchDataSource.swift; sourceTree = "<group>"; };
+		4E627D752620CE31003F4EBF /* LyricsSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsSearchViewModel.swift; sourceTree = "<group>"; };
+		4E627D9E2620DBD2003F4EBF /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		4E627DA62620DBE4003F4EBF /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		4E627DAB2620DC01003F4EBF /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		4E627DB72620E040003F4EBF /* GenericTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTextFieldView.swift; sourceTree = "<group>"; };
+		4E627DBD2620E098003F4EBF /* PlaceholderStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderStyle.swift; sourceTree = "<group>"; };
+		4E627DC52620E180003F4EBF /* GenericTextFieldWithValidate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTextFieldWithValidate.swift; sourceTree = "<group>"; };
+		4E627DCA2620E19B003F4EBF /* ValidationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationFormView.swift; sourceTree = "<group>"; };
+		4E627DD02620E4BB003F4EBF /* GenericButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericButtonView.swift; sourceTree = "<group>"; };
+		4E627DD82620EDDB003F4EBF /* ValidateFormTextsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFormTextsUseCase.swift; sourceTree = "<group>"; };
+		4E627DDD2620EF53003F4EBF /* PublisherExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherExtensions.swift; sourceTree = "<group>"; };
+		4E627DE62620FF80003F4EBF /* GetLyricsListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLyricsListUseCase.swift; sourceTree = "<group>"; };
+		4E627DE72620FF80003F4EBF /* LyricsListCoreDataDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsListCoreDataDataSource.swift; sourceTree = "<group>"; };
+		4E627DE82620FF80003F4EBF /* LyricsListModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsListModels.swift; sourceTree = "<group>"; };
+		4E627DE92620FF80003F4EBF /* LyricsListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsListRepository.swift; sourceTree = "<group>"; };
+		4E627DEA2620FF80003F4EBF /* LyricsListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsListBuilder.swift; sourceTree = "<group>"; };
+		4E627DEB2620FF80003F4EBF /* LyricsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsListView.swift; sourceTree = "<group>"; };
+		4E627DEC2620FF80003F4EBF /* RemoteLyricsListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteLyricsListDataSource.swift; sourceTree = "<group>"; };
+		4E627DED2620FF80003F4EBF /* LyricsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsListViewModel.swift; sourceTree = "<group>"; };
+		4E627E0C26210255003F4EBF /* Song.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Song.xcdatamodel; sourceTree = "<group>"; };
+		4E627E112621026B003F4EBF /* Song+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Song+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4E627E122621026B003F4EBF /* Song+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Song+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4E627E2A26210452003F4EBF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		4E627E3526210496003F4EBF /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		4E627E3F2621050E003F4EBF /* IdentifiableError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifiableError.swift; sourceTree = "<group>"; };
+		4E627E4726211E91003F4EBF /* LocalLyricsSearchDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLyricsSearchDataSource.swift; sourceTree = "<group>"; };
+		4E627E4D26213699003F4EBF /* LyricsSearchCoreDataDataSoruce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsSearchCoreDataDataSoruce.swift; sourceTree = "<group>"; };
+		4E627E5526213901003F4EBF /* SaveSongUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveSongUseCase.swift; sourceTree = "<group>"; };
+		4E627E5B26213A5C003F4EBF /* LyricsSearchDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsSearchDao.swift; sourceTree = "<group>"; };
+		4E627E632621401D003F4EBF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		4E627E6E26214FD0003F4EBF /* GetLastLyricsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLastLyricsUseCase.swift; sourceTree = "<group>"; };
+		4E627E7326216543003F4EBF /* ArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtensions.swift; sourceTree = "<group>"; };
+		4E627E782621669B003F4EBF /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		4E627E7E262166F6003F4EBF /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		4E627E8626216714003F4EBF /* ViewControllerResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerResolver.swift; sourceTree = "<group>"; };
+		4E627E8B26216878003F4EBF /* UIApplicationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtensions.swift; sourceTree = "<group>"; };
+		4E627EA126216FB7003F4EBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E627EA626216FDA003F4EBF /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		4E627EAB26216FFD003F4EBF /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		4E627EB02621703A003F4EBF /* UINavigationBarExtenions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarExtenions.swift; sourceTree = "<group>"; };
+		4E627EB526217054003F4EBF /* UINavigationBarAppearanceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationBarAppearanceExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E627D0026209E9A003F4EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E627D1626209E9E003F4EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E627D2126209E9E003F4EBF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E627CFA26209E99003F4EBF = {
+			isa = PBXGroup;
+			children = (
+				4E627D0526209E9A003F4EBF /* Lirycs-iOS */,
+				4E627D1C26209E9E003F4EBF /* Lirycs-iOSTests */,
+				4E627D2726209E9E003F4EBF /* Lirycs-iOSUITests */,
+				4E627D0426209E9A003F4EBF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E627D0426209E9A003F4EBF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D0326209E9A003F4EBF /* Lirycs-iOS.app */,
+				4E627D1926209E9E003F4EBF /* Lirycs-iOSTests.xctest */,
+				4E627D2426209E9E003F4EBF /* Lirycs-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E627D0526209E9A003F4EBF /* Lirycs-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4E627E2926210444003F4EBF /* AppState */,
+				4E627D392620CC58003F4EBF /* Framework */,
+				4E627D3A2620CC6B003F4EBF /* Main */,
+				4E627D3B2620CC75003F4EBF /* Model */,
+				4E627D3C2620CC7B003F4EBF /* Modules */,
+				4E627D3D2620CC85003F4EBF /* Resources */,
+				4E627D3E2620CC8B003F4EBF /* Utils */,
+				4E627D0E26209E9D003F4EBF /* Preview Content */,
+			);
+			path = "Lirycs-iOS";
+			sourceTree = "<group>";
+		};
+		4E627D0E26209E9D003F4EBF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D0F26209E9D003F4EBF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4E627D1C26209E9E003F4EBF /* Lirycs-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D1D26209E9E003F4EBF /* Lirycs_iOSTests.swift */,
+				4E627D1F26209E9E003F4EBF /* Info.plist */,
+			);
+			path = "Lirycs-iOSTests";
+			sourceTree = "<group>";
+		};
+		4E627D2726209E9E003F4EBF /* Lirycs-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D2826209E9E003F4EBF /* Lirycs_iOSUITests.swift */,
+				4E627D2A26209E9E003F4EBF /* Info.plist */,
+			);
+			path = "Lirycs-iOSUITests";
+			sourceTree = "<group>";
+		};
+		4E627D392620CC58003F4EBF /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				4E627E332621047D003F4EBF /* DatabaseManager */,
+				4E627E3226210463003F4EBF /* RequestManager */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		4E627D3A2620CC6B003F4EBF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D3F2620CCAD003F4EBF /* Root */,
+				4E627D1126209E9D003F4EBF /* LaunchScreen.storyboard */,
+				4E627D1426209E9D003F4EBF /* Info.plist */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4E627D3B2620CC75003F4EBF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E627DFC26210158003F4EBF /* CoreData */,
+				4E627D932620DB02003F4EBF /* BaseModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E627D3C2620CC7B003F4EBF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4E627DE52620FF69003F4EBF /* LyricsList */,
+				4E627D6C2620CDF9003F4EBF /* LyricsSearh */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4E627D3D2620CC85003F4EBF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4E627EA026216FA5003F4EBF /* Colors */,
+				4E627E9F26216F9B003F4EBF /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4E627D3E2620CC8B003F4EBF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D612620CD84003F4EBF /* Extensions */,
+				4E627D9C2620DBB1003F4EBF /* View */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4E627D3F2620CCAD003F4EBF /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D0626209E9A003F4EBF /* AppDelegate.swift */,
+				4E627D0826209E9A003F4EBF /* SceneDelegate.swift */,
+				4E627D0A26209E9A003F4EBF /* ContentView.swift */,
+				4E627E632621401D003F4EBF /* AppCoordinator.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		4E627D402620CCDB003F4EBF /* APIRouter */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D412620CCF6003F4EBF /* APIRouter.swift */,
+			);
+			path = APIRouter;
+			sourceTree = "<group>";
+		};
+		4E627D492620CD0A003F4EBF /* APIRequest */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D4A2620CD1E003F4EBF /* APIManager.swift */,
+			);
+			path = APIRequest;
+			sourceTree = "<group>";
+		};
+		4E627D522620CD2F003F4EBF /* APIEnums */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D532620CD38003F4EBF /* HTTPMethod.swift */,
+			);
+			path = APIEnums;
+			sourceTree = "<group>";
+		};
+		4E627D5B2620CD49003F4EBF /* APIConstants */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D5C2620CD57003F4EBF /* APIManagerConstants.swift */,
+			);
+			path = APIConstants;
+			sourceTree = "<group>";
+		};
+		4E627D612620CD84003F4EBF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4E627DDD2620EF53003F4EBF /* PublisherExtensions.swift */,
+				4E627E7326216543003F4EBF /* ArrayExtensions.swift */,
+				4E627E782621669B003F4EBF /* ViewExtensions.swift */,
+				4E627E8B26216878003F4EBF /* UIApplicationExtensions.swift */,
+				4E627EA626216FDA003F4EBF /* UIColorExtensions.swift */,
+				4E627EAB26216FFD003F4EBF /* ColorExtensions.swift */,
+				4E627EB02621703A003F4EBF /* UINavigationBarExtenions.swift */,
+				4E627EB526217054003F4EBF /* UINavigationBarAppearanceExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4E627D6C2620CDF9003F4EBF /* LyricsSearh */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D6D2620CE09003F4EBF /* CLEAN */,
+				4E627D882620CEBF003F4EBF /* Configurator */,
+			);
+			path = LyricsSearh;
+			sourceTree = "<group>";
+		};
+		4E627D6D2620CE09003F4EBF /* CLEAN */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D872620CEB1003F4EBF /* UserInterface */,
+				4E627D862620CEA9003F4EBF /* Presentation */,
+				4E627D852620CEA0003F4EBF /* UseCases */,
+				4E627D842620CE94003F4EBF /* Domain */,
+				4E627D812620CE63003F4EBF /* Data */,
+			);
+			path = CLEAN;
+			sourceTree = "<group>";
+		};
+		4E627D812620CE63003F4EBF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D822620CE67003F4EBF /* DataSources */,
+				4E627D832620CE77003F4EBF /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4E627D822620CE67003F4EBF /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D742620CE31003F4EBF /* RemoteLyricsSearchDataSource.swift */,
+				4E627E4726211E91003F4EBF /* LocalLyricsSearchDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		4E627D832620CE77003F4EBF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D712620CE31003F4EBF /* LyricsSearchRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4E627D842620CE94003F4EBF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D702620CE31003F4EBF /* LyricsSearchModels.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4E627D852620CEA0003F4EBF /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D6E2620CE31003F4EBF /* GetLyricsSearchUseCase.swift */,
+				4E627DD82620EDDB003F4EBF /* ValidateFormTextsUseCase.swift */,
+				4E627E5526213901003F4EBF /* SaveSongUseCase.swift */,
+				4E627E6E26214FD0003F4EBF /* GetLastLyricsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		4E627D862620CEA9003F4EBF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D752620CE31003F4EBF /* LyricsSearchViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4E627D872620CEB1003F4EBF /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D732620CE31003F4EBF /* LyricsSearchView.swift */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		4E627D882620CEBF003F4EBF /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D722620CE31003F4EBF /* LyricsSearchBuilder.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		4E627D892620CED4003F4EBF /* APIDataSources */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D6F2620CE31003F4EBF /* LyricsSearchURLSessionDataSource.swift */,
+			);
+			path = APIDataSources;
+			sourceTree = "<group>";
+		};
+		4E627D932620DB02003F4EBF /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E627E3F2621050E003F4EBF /* IdentifiableError.swift */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		4E627D9C2620DBB1003F4EBF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4E627E7D262166E9003F4EBF /* SearchBar */,
+				4E627DCF2620E4B4003F4EBF /* Buttons */,
+				4E627DBC2620E090003F4EBF /* ViewModifiers */,
+				4E627DB32620E038003F4EBF /* TextFields */,
+				4E627D9D2620DBBB003F4EBF /* LoadingView */,
+				4E627DCA2620E19B003F4EBF /* ValidationFormView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E627D9D2620DBBB003F4EBF /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D9E2620DBD2003F4EBF /* LoadingView.swift */,
+				4E627DA62620DBE4003F4EBF /* VisualEffectView.swift */,
+				4E627DAB2620DC01003F4EBF /* ActivityIndicator.swift */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		4E627DB32620E038003F4EBF /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				4E627DB72620E040003F4EBF /* GenericTextFieldView.swift */,
+				4E627DC52620E180003F4EBF /* GenericTextFieldWithValidate.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		4E627DBC2620E090003F4EBF /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				4E627DBD2620E098003F4EBF /* PlaceholderStyle.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		4E627DCF2620E4B4003F4EBF /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				4E627DD02620E4BB003F4EBF /* GenericButtonView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		4E627DE52620FF69003F4EBF /* LyricsList */ = {
+			isa = PBXGroup;
+			children = (
+				4E627E90262169F7003F4EBF /* CLEAN */,
+				4E627E91262169FD003F4EBF /* Configurator */,
+			);
+			path = LyricsList;
+			sourceTree = "<group>";
+		};
+		4E627DFC26210158003F4EBF /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				4E627DFD2621015D003F4EBF /* DataModel */,
+				4E627E042621020C003F4EBF /* NSManagedObjectModel */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		4E627DFD2621015D003F4EBF /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E627E0B26210255003F4EBF /* Song.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		4E627E042621020C003F4EBF /* NSManagedObjectModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E627E112621026B003F4EBF /* Song+CoreDataClass.swift */,
+				4E627E122621026B003F4EBF /* Song+CoreDataProperties.swift */,
+			);
+			path = NSManagedObjectModel;
+			sourceTree = "<group>";
+		};
+		4E627E2926210444003F4EBF /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				4E627E2A26210452003F4EBF /* AppState.swift */,
+			);
+			path = AppState;
+			sourceTree = "<group>";
+		};
+		4E627E3226210463003F4EBF /* RequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D5B2620CD49003F4EBF /* APIConstants */,
+				4E627D892620CED4003F4EBF /* APIDataSources */,
+				4E627D522620CD2F003F4EBF /* APIEnums */,
+				4E627D492620CD0A003F4EBF /* APIRequest */,
+				4E627D402620CCDB003F4EBF /* APIRouter */,
+			);
+			path = RequestManager;
+			sourceTree = "<group>";
+		};
+		4E627E332621047D003F4EBF /* DatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				4E627E4C262135E8003F4EBF /* DatabaseDaos */,
+				4E627E5A26213A2C003F4EBF /* DataSources */,
+				4E627E3426210489003F4EBF /* PersistanceManager */,
+			);
+			path = DatabaseManager;
+			sourceTree = "<group>";
+		};
+		4E627E3426210489003F4EBF /* PersistanceManager */ = {
+			isa = PBXGroup;
+			children = (
+				4E627E3526210496003F4EBF /* DatabaseManager.swift */,
+			);
+			path = PersistanceManager;
+			sourceTree = "<group>";
+		};
+		4E627E4C262135E8003F4EBF /* DatabaseDaos */ = {
+			isa = PBXGroup;
+			children = (
+				4E627E5B26213A5C003F4EBF /* LyricsSearchDao.swift */,
+			);
+			path = DatabaseDaos;
+			sourceTree = "<group>";
+		};
+		4E627E5A26213A2C003F4EBF /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				4E627E4D26213699003F4EBF /* LyricsSearchCoreDataDataSoruce.swift */,
+				4E627DE72620FF80003F4EBF /* LyricsListCoreDataDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		4E627E7D262166E9003F4EBF /* SearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				4E627E7E262166F6003F4EBF /* SearchBar.swift */,
+				4E627E8626216714003F4EBF /* ViewControllerResolver.swift */,
+			);
+			path = SearchBar;
+			sourceTree = "<group>";
+		};
+		4E627E90262169F7003F4EBF /* CLEAN */ = {
+			isa = PBXGroup;
+			children = (
+				4E627E9B26216A43003F4EBF /* UserInterface */,
+				4E627E9A26216A38003F4EBF /* Presentation */,
+				4E627E9926216A2C003F4EBF /* UseCases */,
+				4E627E9826216A25003F4EBF /* Domain */,
+				4E627E9526216A0E003F4EBF /* Data */,
+			);
+			path = CLEAN;
+			sourceTree = "<group>";
+		};
+		4E627E91262169FD003F4EBF /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				4E627DEA2620FF80003F4EBF /* LyricsListBuilder.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		4E627E9526216A0E003F4EBF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4E627E9726216A17003F4EBF /* DataSources */,
+				4E627E9626216A12003F4EBF /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4E627E9626216A12003F4EBF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				4E627DE92620FF80003F4EBF /* LyricsListRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		4E627E9726216A17003F4EBF /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				4E627DEC2620FF80003F4EBF /* RemoteLyricsListDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		4E627E9826216A25003F4EBF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4E627DE82620FF80003F4EBF /* LyricsListModels.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4E627E9926216A2C003F4EBF /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				4E627DE62620FF80003F4EBF /* GetLyricsListUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		4E627E9A26216A38003F4EBF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4E627DED2620FF80003F4EBF /* LyricsListViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4E627E9B26216A43003F4EBF /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				4E627DEB2620FF80003F4EBF /* LyricsListView.swift */,
+			);
+			path = UserInterface;
+			sourceTree = "<group>";
+		};
+		4E627E9F26216F9B003F4EBF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4E627D0C26209E9D003F4EBF /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		4E627EA026216FA5003F4EBF /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				4E627EA126216FB7003F4EBF /* Assets.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E627D0226209E9A003F4EBF /* Lirycs-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E627D2D26209E9E003F4EBF /* Build configuration list for PBXNativeTarget "Lirycs-iOS" */;
+			buildPhases = (
+				4E627CFF26209E9A003F4EBF /* Sources */,
+				4E627D0026209E9A003F4EBF /* Frameworks */,
+				4E627D0126209E9A003F4EBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lirycs-iOS";
+			productName = "Lirycs-iOS";
+			productReference = 4E627D0326209E9A003F4EBF /* Lirycs-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E627D1826209E9E003F4EBF /* Lirycs-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E627D3026209E9E003F4EBF /* Build configuration list for PBXNativeTarget "Lirycs-iOSTests" */;
+			buildPhases = (
+				4E627D1526209E9E003F4EBF /* Sources */,
+				4E627D1626209E9E003F4EBF /* Frameworks */,
+				4E627D1726209E9E003F4EBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E627D1B26209E9E003F4EBF /* PBXTargetDependency */,
+			);
+			name = "Lirycs-iOSTests";
+			productName = "Lirycs-iOSTests";
+			productReference = 4E627D1926209E9E003F4EBF /* Lirycs-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E627D2326209E9E003F4EBF /* Lirycs-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E627D3326209E9E003F4EBF /* Build configuration list for PBXNativeTarget "Lirycs-iOSUITests" */;
+			buildPhases = (
+				4E627D2026209E9E003F4EBF /* Sources */,
+				4E627D2126209E9E003F4EBF /* Frameworks */,
+				4E627D2226209E9E003F4EBF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E627D2626209E9E003F4EBF /* PBXTargetDependency */,
+			);
+			name = "Lirycs-iOSUITests";
+			productName = "Lirycs-iOSUITests";
+			productReference = 4E627D2426209E9E003F4EBF /* Lirycs-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E627CFB26209E99003F4EBF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					4E627D0226209E9A003F4EBF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					4E627D1826209E9E003F4EBF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4E627D0226209E9A003F4EBF;
+					};
+					4E627D2326209E9E003F4EBF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 4E627D0226209E9A003F4EBF;
+					};
+				};
+			};
+			buildConfigurationList = 4E627CFE26209E99003F4EBF /* Build configuration list for PBXProject "Lirycs-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E627CFA26209E99003F4EBF;
+			productRefGroup = 4E627D0426209E9A003F4EBF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E627D0226209E9A003F4EBF /* Lirycs-iOS */,
+				4E627D1826209E9E003F4EBF /* Lirycs-iOSTests */,
+				4E627D2326209E9E003F4EBF /* Lirycs-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E627D0126209E9A003F4EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E627D1326209E9D003F4EBF /* LaunchScreen.storyboard in Resources */,
+				4E627D1026209E9D003F4EBF /* Preview Assets.xcassets in Resources */,
+				4E627EA226216FB7003F4EBF /* Assets.xcassets in Resources */,
+				4E627D0D26209E9D003F4EBF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E627D1726209E9E003F4EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E627D2226209E9E003F4EBF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E627CFF26209E9A003F4EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E627E642621401D003F4EBF /* AppCoordinator.swift in Sources */,
+				4E627EB626217054003F4EBF /* UINavigationBarAppearanceExtensions.swift in Sources */,
+				4E627D7D2620CE31003F4EBF /* LyricsSearchViewModel.swift in Sources */,
+				4E627D7C2620CE31003F4EBF /* RemoteLyricsSearchDataSource.swift in Sources */,
+				4E627E3626210496003F4EBF /* DatabaseManager.swift in Sources */,
+				4E627DCB2620E19B003F4EBF /* ValidationFormView.swift in Sources */,
+				4E627DAC2620DC01003F4EBF /* ActivityIndicator.swift in Sources */,
+				4E627E402621050E003F4EBF /* IdentifiableError.swift in Sources */,
+				4E627D772620CE31003F4EBF /* LyricsSearchURLSessionDataSource.swift in Sources */,
+				4E627DEE2620FF80003F4EBF /* GetLyricsListUseCase.swift in Sources */,
+				4E627D0726209E9A003F4EBF /* AppDelegate.swift in Sources */,
+				4E627E792621669B003F4EBF /* ViewExtensions.swift in Sources */,
+				4E627DEF2620FF80003F4EBF /* LyricsListCoreDataDataSource.swift in Sources */,
+				4E627E4826211E92003F4EBF /* LocalLyricsSearchDataSource.swift in Sources */,
+				4E627DD92620EDDB003F4EBF /* ValidateFormTextsUseCase.swift in Sources */,
+				4E627D9F2620DBD2003F4EBF /* LoadingView.swift in Sources */,
+				4E627EB12621703A003F4EBF /* UINavigationBarExtenions.swift in Sources */,
+				4E627D422620CCF6003F4EBF /* APIRouter.swift in Sources */,
+				4E627E8C26216878003F4EBF /* UIApplicationExtensions.swift in Sources */,
+				4E627DF12620FF80003F4EBF /* LyricsListRepository.swift in Sources */,
+				4E627D7A2620CE31003F4EBF /* LyricsSearchBuilder.swift in Sources */,
+				4E627DDE2620EF53003F4EBF /* PublisherExtensions.swift in Sources */,
+				4E627DF52620FF80003F4EBF /* LyricsListViewModel.swift in Sources */,
+				4E627D542620CD38003F4EBF /* HTTPMethod.swift in Sources */,
+				4E627D4B2620CD1E003F4EBF /* APIManager.swift in Sources */,
+				4E627DB82620E040003F4EBF /* GenericTextFieldView.swift in Sources */,
+				4E627E0D26210255003F4EBF /* Song.xcdatamodeld in Sources */,
+				4E627D782620CE31003F4EBF /* LyricsSearchModels.swift in Sources */,
+				4E627D762620CE31003F4EBF /* GetLyricsSearchUseCase.swift in Sources */,
+				4E627EAC26216FFD003F4EBF /* ColorExtensions.swift in Sources */,
+				4E627E2B26210452003F4EBF /* AppState.swift in Sources */,
+				4E627DD12620E4BB003F4EBF /* GenericButtonView.swift in Sources */,
+				4E627E7426216543003F4EBF /* ArrayExtensions.swift in Sources */,
+				4E627E5C26213A5C003F4EBF /* LyricsSearchDao.swift in Sources */,
+				4E627DF02620FF80003F4EBF /* LyricsListModels.swift in Sources */,
+				4E627E8726216714003F4EBF /* ViewControllerResolver.swift in Sources */,
+				4E627DA72620DBE4003F4EBF /* VisualEffectView.swift in Sources */,
+				4E627E4E26213699003F4EBF /* LyricsSearchCoreDataDataSoruce.swift in Sources */,
+				4E627D792620CE31003F4EBF /* LyricsSearchRepository.swift in Sources */,
+				4E627DBE2620E098003F4EBF /* PlaceholderStyle.swift in Sources */,
+				4E627E132621026B003F4EBF /* Song+CoreDataClass.swift in Sources */,
+				4E627D5D2620CD57003F4EBF /* APIManagerConstants.swift in Sources */,
+				4E627E7F262166F6003F4EBF /* SearchBar.swift in Sources */,
+				4E627E5626213901003F4EBF /* SaveSongUseCase.swift in Sources */,
+				4E627DF22620FF80003F4EBF /* LyricsListBuilder.swift in Sources */,
+				4E627EA726216FDA003F4EBF /* UIColorExtensions.swift in Sources */,
+				4E627DF42620FF80003F4EBF /* RemoteLyricsListDataSource.swift in Sources */,
+				4E627DC62620E180003F4EBF /* GenericTextFieldWithValidate.swift in Sources */,
+				4E627DF32620FF80003F4EBF /* LyricsListView.swift in Sources */,
+				4E627D0926209E9A003F4EBF /* SceneDelegate.swift in Sources */,
+				4E627E6F26214FD0003F4EBF /* GetLastLyricsUseCase.swift in Sources */,
+				4E627D7B2620CE31003F4EBF /* LyricsSearchView.swift in Sources */,
+				4E627E142621026B003F4EBF /* Song+CoreDataProperties.swift in Sources */,
+				4E627D0B26209E9A003F4EBF /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E627D1526209E9E003F4EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E627D1E26209E9E003F4EBF /* Lirycs_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E627D2026209E9E003F4EBF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E627D2926209E9E003F4EBF /* Lirycs_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E627D1B26209E9E003F4EBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E627D0226209E9A003F4EBF /* Lirycs-iOS */;
+			targetProxy = 4E627D1A26209E9E003F4EBF /* PBXContainerItemProxy */;
+		};
+		4E627D2626209E9E003F4EBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E627D0226209E9A003F4EBF /* Lirycs-iOS */;
+			targetProxy = 4E627D2526209E9E003F4EBF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E627D1126209E9D003F4EBF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E627D1226209E9D003F4EBF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E627D2B26209E9E003F4EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E627D2C26209E9E003F4EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E627D2E26209E9E003F4EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Lirycs-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 9564SA5C5P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Lirycs-iOS/Main/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.desayscod.Lirycs-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E627D2F26209E9E003F4EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Lirycs-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 9564SA5C5P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Lirycs-iOS/Main/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.desayscod.Lirycs-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4E627D3126209E9E003F4EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9564SA5C5P;
+				INFOPLIST_FILE = "Lirycs-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.desayscod.Lirycs-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lirycs-iOS.app/Lirycs-iOS";
+			};
+			name = Debug;
+		};
+		4E627D3226209E9E003F4EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9564SA5C5P;
+				INFOPLIST_FILE = "Lirycs-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.desayscod.Lirycs-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lirycs-iOS.app/Lirycs-iOS";
+			};
+			name = Release;
+		};
+		4E627D3426209E9E003F4EBF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9564SA5C5P;
+				INFOPLIST_FILE = "Lirycs-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.desayscod.Lirycs-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lirycs-iOS";
+			};
+			name = Debug;
+		};
+		4E627D3526209E9E003F4EBF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9564SA5C5P;
+				INFOPLIST_FILE = "Lirycs-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.desayscod.Lirycs-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Lirycs-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E627CFE26209E99003F4EBF /* Build configuration list for PBXProject "Lirycs-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E627D2B26209E9E003F4EBF /* Debug */,
+				4E627D2C26209E9E003F4EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E627D2D26209E9E003F4EBF /* Build configuration list for PBXNativeTarget "Lirycs-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E627D2E26209E9E003F4EBF /* Debug */,
+				4E627D2F26209E9E003F4EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E627D3026209E9E003F4EBF /* Build configuration list for PBXNativeTarget "Lirycs-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E627D3126209E9E003F4EBF /* Debug */,
+				4E627D3226209E9E003F4EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E627D3326209E9E003F4EBF /* Build configuration list for PBXNativeTarget "Lirycs-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E627D3426209E9E003F4EBF /* Debug */,
+				4E627D3526209E9E003F4EBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4E627E0B26210255003F4EBF /* Song.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4E627E0C26210255003F4EBF /* Song.xcdatamodel */,
+			);
+			currentVersion = 4E627E0C26210255003F4EBF /* Song.xcdatamodel */;
+			path = Song.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4E627CFB26209E99003F4EBF /* Project object */;
+}
